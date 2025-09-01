@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rehman Rajpoot – Web Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio of Rehman Rajpoot: Front-end / JavaScript web developer building fast, accessible web apps.">
+  <meta name="author" content="Rehman Rajpoot" />
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Rehman Rajpoot – Web Developer" />
+  <meta property="og:description" content="Selected projects, skills & contact. See my work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rehman-rajpoot.github.io/" />
+  <meta property="og:image" content="https://rehman-rajpoot.github.io/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://rehman-rajpoot.github.io/" />
+  <link rel="preload" href="assets/profile.jpg" as="image">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="#top">Rehman<span class="dot">.</span></a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">☰</button>
+      <ul id="nav-menu" class="nav__menu" aria-expanded="false">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="btn btn--small">Contact</a></li>
+        <li><button id="theme-toggle" class="mode-switch" aria-label="Toggle dark mode">🌓</button></li>
+      </ul>
+    </nav>
+    <section id="top" class="hero">
+      <h1>Hi, I'm <span class="accent">Rehman&nbsp;Rajpoot</span></h1>
+      <p class="tagline">Front‑End / JavaScript Developer focused on clean UI, performance & accessibility.</p>
+      <div class="hero__actions">
+        <a href="#work" class="btn">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Hire / Contact</a>
+        <a href="assets/Rehman-Rajpoot-CV.pdf" class="btn btn--outline" download>Download CV</a>
+      </div>
+    </section>
+  </header>
+
+  <main id="content">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="grid two">
+        <div>
+          <p>Main ek self‑taught web developer hoon jo modern HTML, CSS, JavaScript & React par focus karta hoon. Mera goal: fast, accessible aur maintainable interfaces banana.</p>
+          <p>Currently learning: <strong>Next.js</strong>, performance audits, and better UI animations.</p>
+          <p>Located in: <strong>Your City</strong> (Update this).</p>
+        </div>
+        <figure class="profile">
+          <img src="assets/profile.jpg" alt="Portrait of Rehman Rajpoot" width="320" height="320" loading="lazy">
+          <figcaption>Rehman Rajpoot</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Featured Projects</h2>
+      <div id="projects" class="cards" aria-live="polite"></div>
+      <p class="center more-link">
+        <a href="https://github.com/rehman-rajpoot" target="_blank" rel="noopener" class="btn btn--ghost">More on GitHub →</a>
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skill-cloud" aria-label="Technical skills">
+        <li>HTML5</li><li>CSS3</li><li>Tailwind</li><li>JavaScript (ES6+)</li>
+        <li>React</li><li>Git</li><li>Responsive Design</li><li>REST APIs</li>
+        <li>Accessibility (a11y)</li><li>Performance</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Feel free to reach out—fastest via email.</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/rehman-rajpoot">@rehman-rajpoot</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-username/">LinkedIn Profile</a></li>
+      </ul>
+
+      <form id="contact-form" class="contact" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+          <span class="error" data-for="name"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <span class="error" data-for="email"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          <span class="error" data-for="message"></span>
+        </div>
+        <button type="submit" class="btn">Send</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Rehman Rajpoot. Built with ❤️ & vanilla web tech.</small>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
